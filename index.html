@@ -51,7 +51,8 @@ a { color: var(--accent); }
 
 /* ─── Screens ────────────────────────────────────────────── */
 .screen { display: none; width: 100%; max-width: 600px; padding: 1.5rem; }
-.screen.active { display: flex; flex-direction: column; align-items: center; }
+.screen.active { display: flex; flex-direction: column; align-items: center; overflow-y: auto; max-height: 100vh; }
+#screen-grid.active { align-items: flex-start; }
 
 /* ─── Screen 1: Name Entry ───────────────────────────────── */
 #screen-name {
@@ -354,7 +355,6 @@ a { color: var(--accent); }
   grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
   gap: .75rem;
   width: 100%;
-  max-width: 1000px;
   padding-bottom: 2rem;
 }
 .film-tile {
